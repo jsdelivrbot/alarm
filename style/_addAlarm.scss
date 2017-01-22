@@ -1,0 +1,36 @@
+@import 'button';
+
+.add-alarm {
+    position: relative;
+    display: table;
+    margin-top: 2rem;
+
+    .add-alarm-button-wrapper {
+        display: table-cell;
+        position: relative;
+        font-size: 0;
+        white-space: nowrap;
+        width: 1%;
+        vertical-align: middle;
+    }
+    .add-alarm-input {
+        display: table-cell;
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #55595c;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-right: 0;
+        border-radius: .25rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
