@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-
-import { addAlarm } from '../actions/index';
+import React, { Component, PropTypes } from 'react';
 
 class AddAlarm extends Component {
     constructor(props) {
@@ -46,6 +44,10 @@ class AddAlarm extends Component {
             </form>
         );
     }
+}
+
+AddAlarm.propTypes = {
+    addAlarm: PropTypes.func.isRequired,
 }
 
 export default AddAlarm

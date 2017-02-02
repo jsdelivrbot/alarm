@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 
-import Alarm from '../containers/Alarm';
+import Alarm from '../components/Alarm';
 
-const AlarmList = ({ alarms }) => {
+const AlarmList = ({ alarms, removeAlarm }) => {
     return (
       <ul className="alarm-list">
         {alarms.map(alarm =>
             <Alarm
               key={alarm.id}
               alarm={alarm}
+              removeAlarm={removeAlarm}
             />
         )}
       </ul>

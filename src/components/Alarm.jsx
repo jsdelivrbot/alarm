@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { removeAlarm } from '../actions/index';
-import Timer from '../containers/Timer';
+import Timer from '../components/Timer';
 
 class Alarm extends Component {
     constructor(props) {
@@ -33,6 +32,7 @@ class Alarm extends Component {
 
 Alarm.propTypes = {
     alarm: PropTypes.object.isRequired,
+    removeAlarm: PropTypes.func.isRequired,
 }
 
 export default Alarm

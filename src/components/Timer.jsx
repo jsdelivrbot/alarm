@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { removeAlarm } from '../actions/index';
-
 class Timer extends Component {
     constructor(props) {
         super(props);
